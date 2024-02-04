@@ -1,5 +1,7 @@
 ## Prefer `let` and `const` over `var`
 
+This outlines the advantages of using `let` and `const` declarations over the legacy var keyword in JavaScript. The introduction of `let` and `const` in ECMAScript 6 (ES6) provides developers with more predictable and block-scoped variable declarations, addressing several issues associated with the use of `var`.
+
 ### Function-scoped vs block-scoped variables
 
 #### Function-scoped variables (`var`)
@@ -54,18 +56,18 @@ Block-scoped variables are subject to the [Temporal Dead Zone (TDZ)](https://www
 
 Block-scoping contributes to better code maintainability by limiting the scope of variables to the relevant block, making it easier to reason about the code.
 
-While function-scoped variables using var have been a traditional part of JavaScript, the introduction of block-scoped variables with `let` and `const` in ES6 significantly improves code predictability and maintainability. Adopting block-scoping is recommended for modern JavaScript development to leverage its advantages and align with best practices.
+While function-scoped variables using `var` have been a traditional part of JavaScript, the introduction of block-scoped variables with `let` and `const` in ES6 significantly improves code predictability and maintainability. Adopting block-scoping is recommended for modern JavaScript development to leverage its advantages and align with best practices.
 
 ### Best Practices
 
 **Use `const` for Constants**
 
-Prefer using const for values that should not be reassigned, promoting a more declarative and immutable coding style. See more about constants the usage of constants [here](./Constants.md).
+Prefer using `const` for values that should not be reassigned, promoting a more declarative and immutable coding style. See more about the usage of constants [here](../README.md#variables).
 
 **Prefer `let` for Mutable Variables**
 
-Use let for variables that need to be reassigned, providing flexibility while still benefiting from block scoping.
+Use `let` for variables that need to be reassigned, providing flexibility while still benefiting from block scoping.
 
 **Avoid Using `var`**
 
-In modern JavaScript development, avoid using var unless working with legacy code. Opt for `let` and `const` for improved code quality and maintainability.
+In modern JavaScript development, avoid using `var` unless working with legacy code. Opt for `let` and `const` for improved code quality and maintainability.

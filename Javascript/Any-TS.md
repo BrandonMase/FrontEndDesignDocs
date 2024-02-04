@@ -1,4 +1,4 @@
-## Avoiding the Use of `any` Type in TypeScript
+## Avoid the Use of `any` Type
 
 The `any` type in TypeScript is a powerful, yet often misused feature that allows variables to hold values of any type. While it provides flexibility, its usage comes with significant drawbacks and undermines the benefits of static typing.
 
