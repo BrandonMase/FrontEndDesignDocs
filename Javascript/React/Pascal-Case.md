@@ -1,35 +1,40 @@
-# React Components MUST Be Named in `PasalCase`
+# Naming Convention for React Components: `PascalCase`
 
-1. **Consistency and Clarity**:
-   - `PascalCase` is a naming convention where each word in a compound name starts with an uppercase letter (e.g., `MyComponent`).
-   - Using `PascalCase` consistently for React components ensures clarity and consistency throughout your codebase.
-   - It distinguishes components from regular HTML elements (which use lowercase) and other variables.
+This documentation underscores the importance of consistently naming React components in `PascalCase`. This naming convention enhances code clarity, aligns with JavaScript class conventions, avoids collisions with HTML elements, and facilitates maintainability.
 
-2. **JavaScript Class Convention**:
-   - React components are essentially JavaScript functions.
-   - `PascalCase` aligns with the common JavaScript naming convention for classes.
-   - When you create a component, you're essentially defining a class, so it makes sense to follow this convention.
+### 1. **Definitions**
+   - **PascalCase** `PascalCase` involves starting each word in a compound name with an uppercase letter (e.g., `MyComponent`)
 
-3. **Avoiding Collisions with HTML Elements**:
-   - React components are often rendered as HTML elements.
-   - If you use lowercase names (e.g., `myComponent`), they might clash with existing HTML tags (e.g., `<myComponent>`).
-   - PascalCase ensures that your custom components won't accidentally collide with native HTML elements.
+### 2. **Benefits**
 
-4. **Tooling and Linting Benefits**:
-   - Many tools and linters (such as ESLint) enforce naming conventions.
-   - By using `PascalCase`, you'll receive warnings if you accidentally use incorrect casing for your components.
-   - This helps catch errors early and maintain code quality.
+   - **Consistency:** 
+   Ensuring consistent use of `PascalCase` for React components promotes clarity and consistency within the codebase.
 
-5. **Readability and Maintainability**:
-   - `PascalCase` makes your code more readable.
-   - When someone else reads your code, they can immediately recognize that a capitalized name refers to a component.
-   - It also aids in searching for components within your project.
+   - **JavaScript Class Convention:** 
+   React components are essentially JavaScript classes. PascalCase` aligns with the common JavaScript naming convention for classes, reinforcing the component-as-class concept in React. 
 
-6. **Consistent File Naming**:
-   - When you create a new component file, naming it in `PascalCase` (e.g., `MyComponent.component.tsx`) ensures consistency.
-   - The filename reflects the content of the file, making it easier to locate specific components.
+   - **Avoiding Collisions with HTML Elements:** 
+   React components are often rendered as HTML elements. `PascalCase` minimizes the risk of collisions with native HTML tags, ensuring that custom components are easily distinguishable from standard HTML elements.
 
-## Example
+   -  **Tooling and Linting Benefits:** 
+   Any tools and linters enforce naming conventions. Adopting `PascalCase` enables early error detection through tools like ESLint, contributing to overall code quality and consistency.
+
+   - **Readability and Maintainability:** 
+   `PascalCase` improves code readability, aiding developers in quickly identifying components. This convention contributes to better maintainability and comprehension, especially when working collaboratively on a codebase.
+
+   - **Consistent File Naming:** 
+   Naming React component files in `PascalCase` ensures consistency between component names and file names (e.g., `MyComponent.component.tsx`). The filename becomes a reflection of the file's content, making it easier to locate and manage specific components.
+
+### 3. **Drawbacks**
+*N/A*
+### 4. **Best Practices**
+   - Name each React component with `PascalCase` eg. (`MyComponent`).
+
+### 5. **When To Break The Standard**
+*N/A*
+
+### 6. **Examples**
+
 ### Bad
 ```tsx
 const myComponent = (props: IMyComponentProps) => {
@@ -42,7 +47,7 @@ const myComponent = (props: IMyComponentProps) => {
 </div>
 
 ```
-This component is named in `camelCase`. When a developer is looking through the code, it isn't immedately clear whether this is a regular function or a React component.
+In this example, the component is named in `camelCase`, causing ambiguity and making it less clear that it's a React component.
 
 ### Good
 ```tsx
@@ -55,6 +60,3 @@ const MyComponent = (props: IMyComponentProps) => {
   <MyComponent>
 </div>
 ```
-
-## Conclusion
-In summary, adopting `PascalCase` for React components enhances code clarity, prevents collisions, aligns with JavaScript conventions, and improves overall maintainability.

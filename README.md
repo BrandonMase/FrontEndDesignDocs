@@ -42,6 +42,7 @@ Sometimes, you may encounter a naming convention that uses angle brackets (`<>`)
   * **MUST** choose variable names that are descriptive and convey the purpose of the variable. [Why?](./Javascript/Variables/Descriptive-Names.md)
   * `Boolean` variables **SHOULD** start with `is`,`has`,`did`,`does`, or `was`.
   * **MUST** use `let` and `const` over `var`. [Why?](./Javascript/Let-Over-Var.md)
+  * **SHOULD NOT** use unneeded context in object keys. [Why?](./Javascript/Variables/Unneeded-Context-Object-Names.md)
   * **SHOULD** **NOT** use the `any` type. [Why?](./Javascript/Any-TS.md)
   * **SHOULD** use `enum` types for limited and well-defined options. [Why?](./Javascript/Enums.md)
   * **SHOULD** use destructuring over explict variable declarations. [Why?](./Javascript/Variables/Destructoring.md)
@@ -56,7 +57,7 @@ Sometimes, you may encounter a naming convention that uses angle brackets (`<>`)
   * **MUST** use `const` for immuatable variables.
   * **MUST** use `UPPER_SNAKE_CASE` for `const` variables. [Why?](./Javascript/Constants/Upper-Snake-Case.md)
   * **MUST** use `camelCase` for `const` functions.
-  * **MUST** use `PascelCase` for `const` React components.
+  * **MUST** use `PascalCase` for `const` React components.
   * **MUST** use `Object.freeze` for constant pass-by-reference variables that need to be completely immutable. [Why?](./Javascript/Constants/Freezing.md)
 
 ## Functions
